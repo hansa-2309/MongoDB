@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-mod-3">   
+            </div>
+            <div class="col-md-6 main">
+                <center>
+                <form action="http://localhost:3000/sign_up" method="POST">
+                    <h2> Student Internal Mark Record</h2>
+                    <input type="text" class="box" id="name" name="name" placeholder="Student Name" required/><br>
+                    <input type="text" class="box" id="sid" name="sid" placeholder="Student ID" required/><br>
+                    <input type="text" class="box" id="int1" name="int1" placeholder="Internal 1" required/><br>
+                    <input type="text" class="box" id="int2" name="int2" placeholder="Internal 2" required/><br>
+                    <input type="text" class="box" id="int3" name="int3" placeholder="Internal 3" required/><br>                   
+                    <input type="submit" value="Insert" id="submit" />
+                    <a href="http://localhost:3000/api/users">Show Student Mark</a>
+                    </form>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
